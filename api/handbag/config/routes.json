@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/handbags",
+      "handler": "handbag.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/handbags/count",
+      "handler": "handbag.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/handbags/:id",
+      "handler": "handbag.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/handbags",
+      "handler": "handbag.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/handbags/:id",
+      "handler": "handbag.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/handbags/:id",
+      "handler": "handbag.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

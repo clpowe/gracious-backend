@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_main_abouts",
+  "info": {
+    "name": "about",
+    "icon": "smile",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "smallText": {
+      "type": "string"
+    },
+    "largeText": {
+      "type": "string"
+    },
+    "mainText": {
+      "type": "text"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "side": {
+      "type": "string"
+    }
+  }
+}

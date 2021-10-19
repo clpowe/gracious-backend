@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/necklaces",
+      "handler": "necklace.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/necklaces/count",
+      "handler": "necklace.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/necklaces/:id",
+      "handler": "necklace.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/necklaces",
+      "handler": "necklace.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/necklaces/:id",
+      "handler": "necklace.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/necklaces/:id",
+      "handler": "necklace.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

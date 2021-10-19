@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/bracelets",
+      "handler": "bracelet.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bracelets/count",
+      "handler": "bracelet.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bracelets/:id",
+      "handler": "bracelet.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/bracelets",
+      "handler": "bracelet.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/bracelets/:id",
+      "handler": "bracelet.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/bracelets/:id",
+      "handler": "bracelet.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

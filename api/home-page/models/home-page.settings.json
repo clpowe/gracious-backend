@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_pages",
+  "info": {
+    "name": "home-page",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "section": {
+      "type": "component",
+      "repeatable": true,
+      "component": "main.home-section"
+    }
+  }
+}

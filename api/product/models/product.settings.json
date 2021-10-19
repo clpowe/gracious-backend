@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "name": "product",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "slug": {
+      "type": "string"
+    },
+    "size": {
+      "type": "integer"
+    },
+    "featured": {
+      "type": "boolean"
+    },
+    "department": {
+      "type": "enumeration",
+      "enum": [
+        "bracelets",
+        "earrings",
+        "handbags",
+        "necklaces",
+        "shoes",
+        "scarves"
+      ]
+    }
+  }
+}

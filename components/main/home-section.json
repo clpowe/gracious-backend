@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_main_home_sections",
+  "info": {
+    "name": "homeSection",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "smallText": {
+      "type": "string"
+    },
+    "largeText": {
+      "type": "string"
+    },
+    "paragraph": {
+      "type": "text"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "productType": {
+      "type": "component",
+      "repeatable": true,
+      "component": "product.product-type"
+    },
+    "side": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/earrings",
+      "handler": "earring.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/earrings/count",
+      "handler": "earring.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/earrings/:id",
+      "handler": "earring.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/earrings",
+      "handler": "earring.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/earrings/:id",
+      "handler": "earring.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/earrings/:id",
+      "handler": "earring.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
